@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,156 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="UIElementLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tN0-kb-l5F">
+                                <rect key="frame" x="243" y="605" width="99" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ddi-Hk-D23"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="gbw-t8-UFf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="RIGHT BUTTON">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jk-Qd-HRN">
+                                <rect key="frame" x="38" y="605" width="99" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="GVE-u5-4qO"/>
+                                    <constraint firstAttribute="height" constant="42" id="v54-XE-6kG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LEFT BUTTON">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9o-h7-DhS">
+                                <rect key="frame" x="38" y="524" width="99" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="EtA-qE-zLX"/>
+                                    <constraint firstAttribute="height" constant="42" id="nWH-nU-Hsh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LEFT BUTTON">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="pWZ-MO-PO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-cJ-Jna">
+                                <rect key="frame" x="243" y="524" width="99" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="5vn-Ei-qZh"/>
+                                    <constraint firstAttribute="height" constant="42" id="iiQ-Cf-Pd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="RIGHT BUTTON">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Ac-f3-rqR">
+                                <rect key="frame" x="16" y="50" width="343" height="209"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208.5" id="9UM-yI-SXT"/>
+                                    <constraint firstAttribute="width" constant="343" id="cQY-fz-HdM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-xQ-w2J">
+                                <rect key="frame" x="35" y="267" width="304" height="228"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="ZZR-C5-IkT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="e1V-mW-uie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4MM-cJ-Jna" secondAttribute="trailing" constant="33" id="2Ts-uk-esq"/>
+                            <constraint firstItem="h9o-h7-DhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="3Bm-yc-s31"/>
+                            <constraint firstItem="6Jk-Qd-HRN" firstAttribute="top" secondItem="h9o-h7-DhS" secondAttribute="bottom" constant="39" id="83d-uH-viA"/>
+                            <constraint firstItem="4MM-cJ-Jna" firstAttribute="width" secondItem="h9o-h7-DhS" secondAttribute="width" id="CjW-Pr-sA4"/>
+                            <constraint firstItem="4MM-cJ-Jna" firstAttribute="top" secondItem="Pw6-xQ-w2J" secondAttribute="bottom" constant="29" id="Ipk-aE-eAN"/>
+                            <constraint firstItem="tN0-kb-l5F" firstAttribute="top" secondItem="4MM-cJ-Jna" secondAttribute="bottom" constant="39" id="TdC-wk-t8r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Jk-Qd-HRN" secondAttribute="bottom" constant="20" id="UeN-Co-fTD"/>
+                            <constraint firstItem="0Ac-f3-rqR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="XkJ-fw-8N5"/>
+                            <constraint firstItem="tN0-kb-l5F" firstAttribute="height" secondItem="6Jk-Qd-HRN" secondAttribute="height" id="Y8d-0Y-fxv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tN0-kb-l5F" secondAttribute="trailing" constant="33" id="YOQ-vZ-jca"/>
+                            <constraint firstItem="Pw6-xQ-w2J" firstAttribute="top" secondItem="0Ac-f3-rqR" secondAttribute="bottom" constant="7.5" id="ad8-jL-PFY"/>
+                            <constraint firstItem="Pw6-xQ-w2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35.5" id="bs3-Ze-cmK"/>
+                            <constraint firstItem="4MM-cJ-Jna" firstAttribute="height" secondItem="h9o-h7-DhS" secondAttribute="height" id="dWU-Vg-Ijz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tN0-kb-l5F" secondAttribute="bottom" constant="20" id="dcD-hB-ea8"/>
+                            <constraint firstItem="tN0-kb-l5F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Jk-Qd-HRN" secondAttribute="trailing" constant="8" symbolic="YES" id="e4m-Dz-Ymd"/>
+                            <constraint firstItem="6Jk-Qd-HRN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="iOr-UB-yf7"/>
+                            <constraint firstItem="Pw6-xQ-w2J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ixk-HR-D79"/>
+                            <constraint firstItem="4MM-cJ-Jna" firstAttribute="leading" secondItem="h9o-h7-DhS" secondAttribute="trailing" constant="106" id="jQJ-Sx-bTl"/>
+                            <constraint firstItem="0Ac-f3-rqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oDe-eL-mLZ"/>
+                            <constraint firstItem="0Ac-f3-rqR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vfU-XY-gl7"/>
+                            <constraint firstItem="tN0-kb-l5F" firstAttribute="width" secondItem="6Jk-Qd-HRN" secondAttribute="width" id="wGk-19-RNl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftButtonUp" destination="h9o-h7-DhS" id="L9S-XB-Ux7"/>
+                        <outlet property="leftButtondown" destination="6Jk-Qd-HRN" id="isL-mg-Sxg"/>
+                        <outlet property="mainImageView" destination="0Ac-f3-rqR" id="jI0-MY-TL7"/>
+                        <outlet property="myLabel" destination="Pw6-xQ-w2J" id="uJK-qc-k1g"/>
+                        <outlet property="rightButtonDown" destination="tN0-kb-l5F" id="5Dm-nc-zrv"/>
+                        <outlet property="rightButtonUp" destination="4MM-cJ-Jna" id="qwF-s3-DWd"/>
+                        <outletCollection property="styleOutletCollection" destination="h9o-h7-DhS" collectionClass="NSMutableArray" id="Ek2-yW-uES"/>
+                        <outletCollection property="styleOutletCollection" destination="4MM-cJ-Jna" collectionClass="NSMutableArray" id="hGf-RZ-kKw"/>
+                        <outletCollection property="styleOutletCollection" destination="6Jk-Qd-HRN" collectionClass="NSMutableArray" id="KLA-d0-8ZE"/>
+                        <outletCollection property="styleOutletCollection" destination="tN0-kb-l5F" collectionClass="NSMutableArray" id="Yde-z3-G1F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="88.605697151424295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
 </document>
