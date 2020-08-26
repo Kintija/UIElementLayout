@@ -50,6 +50,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="leftButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXh-0k-Oaf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9o-h7-DhS">
                                 <rect key="frame" x="38" y="524" width="99" height="42"/>

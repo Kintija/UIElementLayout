@@ -49,6 +49,9 @@ class ViewController: UIViewController {
         }
             
 }
+    
+    //MARK:- Logic Style to myLabel, Buttons and Image
+    
     func changeButtonImage(withImage: String){
         
         leftButtonUp.setImage(UIImage(named: "home.png"), for: .normal)
@@ -57,9 +60,13 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
     }
     
+   
+    
     @IBAction func touchDragOutsideTapped(_ sender: Any) {
         print("touchDragOutsideTapped")
         changeButtonImage(withImage: "home.png")
     }
+    
+   
     
 }
